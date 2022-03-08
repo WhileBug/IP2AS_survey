@@ -46,7 +46,7 @@ kapar：别名解析工具
 
 整个框架由以下四个步骤构成：
 
-![image-20211023204930573](C:\Users\WhileBug\AppData\Roaming\Typora\typora-user-images\image-20211023204930573.png)
+<img src="C:\Users\WhileBug\AppData\Roaming\Typora\typora-user-images\image-20211023204930573.png" alt="image-20211023204930573" style="zoom:50%;" />
 
 1.**拓扑图构建：**收集从同一个AS到同一个目的地的数百万对traceroute路径和BGP路径
 
@@ -60,7 +60,7 @@ kapar：别名解析工具
 
 作者首先将AS路径转换为字符串，基于traceroute推断出的AS路径将尽可能与BGP推断出的AS路径吻合的猜想，将定位不匹配字符串的问题转换为了一个**LCS（longest common subsequence）**问题，并提出了系统性分析的5个步骤：
 
-![image-20211023211144708](C:\Users\WhileBug\AppData\Roaming\Typora\typora-user-images\image-20211023211144708.png)
+<img src="C:\Users\WhileBug\AppData\Roaming\Typora\typora-user-images\image-20211023211144708.png" alt="image-20211023211144708" style="zoom:50%;" />
 
 - **Special tokens：**两个字符串匹配的结果中出现了特殊字符就必定存在路径不匹配
 - **Tie-break：**存在多种替代方式时，使用在BGP路径中=符号出现得尽量比较早的那种
